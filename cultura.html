@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obtener coordenadas de un elemento</title>
+    <style>
+        #texto {
+            position: relative;
+            left: 50px;
+            top: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="texto">Hola mundo</div>
+
+<script>
+   function obtenerPosicionCaracter(elemento, indiceCaracter) {
+    var range = document.createRange();
+    var sel = window.getSelection();
+    range.setStart(elemento.childNodes[0], indiceCaracter);
+    range.collapse(true);
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var rect = range.getBoundingClientRect();
+    return { left: rect.left, top: rect.top };
+}
+
+var elementoTexto = document.getElementById("texto");
+var posicionCaracter = obtenerPosicionCaracter(elementoTexto, 2);
+
+console.log("Posición del carácter:");
+console.log("Top:", posicionCaracter.top);
+console.log("Left:", posicionCaracter.left);
+</script>
+
+</body>
+</html> 
