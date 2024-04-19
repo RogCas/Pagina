@@ -1,0 +1,55 @@
+body{
+    background: #2B1B3E;
+}
+   
+.grid-container {
+    display: grid;
+    
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url('Fondo.webp'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; 
+    
+}
+
+.grid-item {
+    border: none;
+    
+    
+    font-size: calc(1.5vw + 30px);
+    color: white;
+    
+}
+
+.texto1 {
+    grid-column: 1 / 5; /* Ocupa la primera columna */
+    grid-row: 1 / 2; /* Ocupa la primera fila */
+    
+    border-bottom: 1px solid #ccc;
+    
+    
+    
+    align-self: center; /* Centra verticalmente el contenido */
+    justify-self: center; 
+    
+}
+
+.imagen2 {
+    grid-column: 1 / 9; /* Ocupa la primera columna */
+    grid-row: 3 / 4; /* Ocupa la segunda fila */
+    align-self: end;
+}
+
+.imagen3 {
+    grid-column: 2 / 4; /* Ocupa la segunda columna */
+    grid-row: 2 / 3; /* Ocupa la primera fila */
+    text-align: center;
+}
+
+.imagen4 {
+    grid-column: 3 / 5; /* Ocupa la segunda columna */
+    grid-row: 3 / 4; /* Ocupa la segunda fila */
+}
+
+/* Media query para dispositivos móviles */

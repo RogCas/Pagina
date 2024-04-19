@@ -1,23 +1,49 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño de Cuadrícula Responsivo</title>
-    <link rel="stylesheet" href="pruebacss.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis</title>
+  <link rel="stylesheet" href="pruebacss.css">
+  <link rel = "stylesheet" href="boton.css">
+  <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
+<script src="prueba.js"></script>
+<div class="wrapper">
+    <input type="checkbox" id="btn" hidden>
+    <label for="btn" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+    </label>
+    <nav id="sidebar">
+
+        <div class="title">MENU</div>
+            <ul class="list-items">
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="cultura.html"><i class="fas fa-paint-brush"></i>Culture</a></li>
+                <li><a href="#"><i class="fas fa-eye"></i>Analysis of an event</a></li>
+                <li><a href="#"><i class="fas fa-book"></i>Anecdotes</a></li>
+                
+                <div class="icons">
+                    <a href="https://www.facebook.com/CELEX.ESFM/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.esfm.ipn.mx/celex-esfm.html"><i class="fab fa-google"></i></a>
+                    <a href="https://github.com/RogCas"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-youtube"></i></a>
+                </div>
+            </ul>
+    </nav>
+</div>
 <body>
-    <section class="grid-container">
-        <div class="grid-item texto">Get in touch to <p>create</p> <p>together dazzling things</p></div>
-        <div class="grid-item imagen1">
-            <img src="b.png"alt="Descripción de la imagen 1">
-        </div>
-        <div class="grid-item imagen2">
-            <img src="c.png"alt="Descripción de la imagen 1">
-        </div>
-        <div class="grid-item imagen3">
-            <img src="a.png"alt="Descripción de la imagen 1">
-        </div>
-    </section>
+  <div class="slideshow-container">
+    <img src="BLUEY0.JPG" class="slides" id="imagen1">
+    <img src="bluey1.JPG" class="slides" id="imagen2">
+    <img src="bluey2.JPG" class="slides" id="imagen3">
+    <img src="bluey3.JPG" class="slides" id="imagen4">
+    <img src="bluey3.1.JPG" class="slides" id="imagen5">
+    <video src="ERROR4.mp4" class="slides" id="video" controls muted></video>
+    <video src="ERROR3.mp4" class="slides" id="video" controls muted></video>
+  </div>
+  
 </body>
 </html>

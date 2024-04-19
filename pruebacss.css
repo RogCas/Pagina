@@ -1,76 +1,32 @@
-.fondo{
-    background-color: #0000;
+body{
+    background-image: url(bluey.png);
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    background-position: center center;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px; /* Espacio entre las celdas */
-    background:  #9B4819;
-}
-
-.grid-item {
-    border: none;
-    padding: 20px;
-    text-align: center;
-    font-size: calc(1.5vw + 30px);
-    color: white;
-    
-}
-
-.texto {
-    grid-column: 1 / 2; /* Ocupa la primera columna */
-    grid-row: 1 / 2; /* Ocupa la primera fila */
-    
-    border-bottom: 1px solid #ccc;
-    padding: 20px;
-    
-    text-align: center;
-    align-self: center; /* Centra verticalmente el contenido */
-    justify-self: center; 
-    
-}
-
-.imagen1 {
-    grid-column: 1 / 2; /* Ocupa la primera columna */
-    grid-row: 2 / 3; /* Ocupa la segunda fila */
-}
-
-.imagen2 {
-    grid-column: 2 / 3; /* Ocupa la segunda columna */
-    grid-row: 1 / 2; /* Ocupa la primera fila */
-}
-
-.imagen3 {
-    grid-column: 2 / 3; /* Ocupa la segunda columna */
-    grid-row: 2 / 3; /* Ocupa la segunda fila */
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 767px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
-        grid-template-rows: repeat(5, 1fr); /* Aumentar el número de filas */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .slides {
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
-
-    .texto {
-        grid-column: 1 / 2; /* Ocupa la única columna */
-        grid-row: 1 / 2; /* Ocupa la primera fila */
+    to {
+      opacity: 1;
     }
-
-    .imagen1 {
-        grid-column: 1 / 2; /* Ocupa la única columna */
-        grid-row: 2 / 3; /* Ocupa la segunda fila */
-    }
-
-    .imagen2 {
-        grid-column: 1 / 2; /* Ocupa la única columna */
-        grid-row: 3 / 4; /* Ocupa la tercera fila */
-    }
-
-    .imagen3 {
-        grid-column: 1 / 2; /* Ocupa la única columna */
-        grid-row: 4 / 5; /* Ocupa la cuarta fila */
-    }
-}
+  }
+  
