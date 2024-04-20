@@ -1,7 +1,8 @@
 body{
-    background-image: url(bluey.png);
+    background-image: url(blueyfondo.png);
     background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
-    background-position: center center;
+    background-position: center;
+    
 }
 .slideshow-container {
     position: relative;

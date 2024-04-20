@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function startTimeout() {
         clearTimeout(timeout);
-        timeout = setTimeout(nextSlide, 20000); // Cambia de imagen o video cada 15 segundos
+        timeout = setTimeout(nextSlide, 200000); // Cambia de imagen o video cada 15 segundos
     }
 
     document.addEventListener('keydown', function(event) {

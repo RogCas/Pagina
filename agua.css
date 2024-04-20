@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@1&display=swap');
+
+
+@font-face {
+    font-family: 'Bukhari';
+    src: url(BukhariScript.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Nickainley';
+    src: url(Nickainley-Normal.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+body{
+    background-image: url(agua.webp);
+    background-color: #022D4C;
+    background-size: cover;
+    background-position: center;
+}
+
+.f1{
+    font-family: 'Radley';
+    font-size: 41pt;
+    color: #BD8F53;
+}
+.f2{
+    font-family: 'Nickainley';
+    font-size: 27pt;
+    color: #BD8F53;
+}
+.f3{
+font-family: "Anonymous Pro", monospace;
+color: #BD8F53;
+
+}
+
+
+
+
+
+   
+.grid-container {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: 60px repeat(2, 1fr) ;
+    
+    background:  transparent;
+    
+}
+
+.grid-item {
+    border: none;
+    justify-self: center;
+    align-self: center;    
+    color: #BD8F53;
+    
+}
+
+
+.texto1 {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+    justify-self: center;
+    align-self: center;
+    
+    
+}
+
+.texto2 {
+    grid-column: 2 / 3; /* Ocupa la primera columna */
+    grid-row: 1 / 2; /* Ocupa la segunda fila */
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.texto3 {
+    grid-column: 1 / 2; /* Ocupa la segunda columna */
+    grid-row: 2 / 4; /* Ocupa la primera fila */
+    justify-self: center;
+    align-self: center;
+    font-size: 20pt;
+    padding: 0 3em;
+    
+}
+
+
+.hd1 {
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    grid-row: 2 / 3; /* Ocupa la segunda fila */
+    padding: 3em 0;
+    text-align: center;
+}
+
+.hd2 {
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    grid-row: 3 / 4 ; /* Ocupa la segunda fila */
+    text-align: right;
+    
+    
+    
+}
+img
+{
+    
+    width: 50%;
+}
+
